@@ -1,5 +1,8 @@
 #require_recipe "apt"
 require_recipe "apache2"
+require_recipe "apache2::mod_php5"
+require_recipe "php"
+#require_recipe "php::mod_mysql"
 
 execute "disable-default-site" do
   command "sudo a2dissite default"
