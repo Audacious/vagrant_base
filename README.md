@@ -9,14 +9,14 @@ This repo is a place for me to keep a set of Vagrant files and setting for me to
 
 * It used Chef not Puppet
 * All cookbooks are from Opscode.
-* The DocumentRoot of apache is set to the web_root folder.
+* The DocumentRoot of apache is set to the project/www folder.
 * In the Vagrantfile I set vagrant_main in the run list and then all others are included (require_recipe) from vagrant_main/recipes/default.rb
 
 Currently included
 * apache2
+* php
 
 Still to include and test
-* PHP
 * MySQL
 * PostgreSQL
 * Python
